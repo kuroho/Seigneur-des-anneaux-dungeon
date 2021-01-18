@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Seigneur des anneaux : Dungeon</title>
+		<link href="/image/favicon.ico" rel="icon" type="image/x-icon" />
+		<link rel="stylesheet" href="css/general.css">
+		<link rel="stylesheet" href="css/popup.css">
+	</head>
+	<body class="dead-smaug">
+		<div class="overlay" id="combatLog">
+			<div class="popup">
+				<a class="close" href="#">&times; Fermer</a>
+				<h2>Journal de combat</h2>
+				<div class="popuptext content"></div>
+			</div>
+		</div>
+		<div class="center">
+			<h1 class="big-font">La terre du milieu est sauvé</h1><br>
+			<div class="audio">
+				<audio id="music" controls autoplay loop>
+					<source src="/sound/the-misty-mountains-cold-the-hobbit.mp3">
+				</audio>
+			</div>
+			<div class="win"></div>
+			<div class="nb_kills_win"></div>
+			<div class="box fade-in-3">
+				<a class="button" href="#combatLog">
+					<img src='/image/icons/journal.png' class="icons" alt="Journal de combat"></img> Journal de combat
+				</a>
+			</div>
+			<div class="choiceCharacter center"></div>
+		</div>
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/end.js"></script>
+	<script src="js/music.js"></script>
+</html>

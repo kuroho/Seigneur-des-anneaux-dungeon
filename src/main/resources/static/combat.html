@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='UTF-8'>
+		<title>Seigneur des anneaux : Combat</title>
+		<link href="/image/favicon.ico" rel="icon" type="image/x-icon" />
+		<link rel="stylesheet" href="css/general.css">
+		<link rel="stylesheet" href="css/combat.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	</head>
+	<body class="index-bg">
+		<h1 class="big-font">Combat</h1>
+		<div class="center">
+			<div class="audio">
+				<audio  id="music" controls autoplay loop >
+					<source src="/sound/Helms Deep.mp3">
+				</audio>
+			</div>
+		</div>
+		<div class="combat center">
+			<div class="characterCombat left"></div>
+			<div class="monsterCombat right"></div>
+		</div>
+		<div class="choiceCharacter center">
+			<input type="button" id="combat" class="brownB bigButton" value="Prochain tour">
+		</div>
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/combat.js"></script>
+	<script src="js/music.js"></script>
+</html>

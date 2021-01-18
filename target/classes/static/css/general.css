@@ -1,0 +1,340 @@
+@font-face {
+	font-family: "Mordor";
+	src: url("font/Blacklisted.ttf");
+}
+
+@font-face {
+	font-family: "Lord of the ring";
+	src: url("font/Lotr.ttf");
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.choiceCharacter {
+	position:absolute;
+	bottom:10%;
+	width:98%;
+	height:60px;
+	padding-left: 20px;
+}
+
+audio {
+	position: absolute;
+	left:0%;
+	top: 0%;
+	box-shadow: 5px 5px 20px rgba(0,0, 0, 0.4);
+	border-radius: 90px;
+}
+
+body {
+	background-image : url("/image/background.jpg");
+	background-repeat: no-repeat;
+	background-size: auto;
+	font-family: Lord of the ring;
+}
+
+.index-bg {
+	background-position: left -1000px top;
+}
+
+.log-hero-hp, .log-hero-name {
+	color: #d49b00;
+}
+
+.log-monster-hp, .log-monster-name {
+	color: #d44a00;
+}
+
+.log-damage	{
+	color: #bf0043;
+	font-weight: bold;
+}
+
+.dead-smaug {
+	background-image : url("/image/dead-smaug.jpg");
+	background-size: cover;
+}
+
+.selectBack {
+	background-image : url("/image/selectBack.jpg");
+	background-size: cover;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+	font-family: "Lord of the ring";
+	text-shadow: 0px 5px 2px #555;
+}
+
+h2 {
+	color: white;
+	text-align: center;
+	font-family: "Lord of the ring";
+	text-shadow: 0px 3px 2px #555;
+}
+
+.icons {
+	vertical-align: middle;
+}
+
+.big-font {
+	font-size: 72px;
+	color: #eae0c2;
+}
+
+.medium-font {
+	font-size: 40px;
+	color: #eae0c2;
+}
+
+.gif-background {
+	background: url("https://media.giphy.com/media/csrTZ7cBdKg24/giphy.gif");
+	background-size: cover;
+	box-shadow: 0px 1px 0px 0px grey;
+	border-radius:15px;
+	border:2px solid #333029;
+	display:inline-block;
+	cursor:pointer;
+	color:white;
+	font-family:Lord of the ring;
+	font-size:14px;
+	font-weight:bold;
+	padding:12px 16px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+
+h2 {
+	color: white;
+	text-align: center;
+	font-family: "Lord of the ring";
+}
+
+p {
+	color : white;
+	font-size: 20px;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.center	{
+	text-align: center;
+}
+
+.middle	{
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.combat {
+	margin: 0 auto;
+	width: 1000px;
+}
+
+.lstCharacter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.character {
+	padding: 50px;
+}
+
+.monster {
+	padding: 50px;
+}
+
+.brownB {
+	box-shadow: 0px 1px 0px 0px #1c1b18;
+	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+	background-color:#eae0c2;
+	border-radius:15px;
+	border:2px solid #333029;
+	display:inline-block;
+	cursor:pointer;
+	color:#505739;
+	font-family:Lord of the ring;
+	font-size:14px;
+	font-weight:bold;
+	padding:12px 16px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+
+.brownB:hover {
+	color: #ab967d; 
+}
+
+.medium-life {
+	color: #d9a44a !important;
+}
+
+.low-life {
+	color: #ff4747 !important;
+}
+
+.disabled {
+	background-color: #595957 !important;
+	background:linear-gradient(to bottom, #595957 5%, #ccc2a6 100%) !important;
+}
+
+.bigButton {
+	font-size:60px;
+	padding: 20px;
+}
+
+.choice:hover {
+	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+	background-color:#ccc2a6;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.avatar {
+	padding: 12px 0px;
+    border-radius: 25px;
+    vertical-align: middle;
+}
+
+.avatar-hero {
+	padding: 12px 0px;
+    border-radius: 25px;
+    vertical-align: middle;
+    float: left;
+}
+
+.avatar-monster {
+	padding: 12px 0px;
+    border-radius: 25px;
+    vertical-align: middle;
+}
+
+.hp-hero {
+	color: green;
+	font-size: 30px;
+}
+
+.hp-monster {
+	color: green;
+	font-size: 30px;
+}
+
+.name {
+	color: white;
+	text-shadow: 0px 2px 3px #555;
+	font-size: 20px;
+	font-family: "Lord of the ring";
+}
+
+.fade-in {
+	animation: fadeIn ease 1s;
+	-webkit-animation: fadeIn ease 1s;
+	-moz-animation: fadeIn ease 1s;
+	-o-animation: fadeIn ease 1s;
+	-ms-animation: fadeIn ease 1s;
+}
+
+.fade-in-3 {
+	animation: fadeIn ease 3s;
+	-webkit-animation: fadeIn ease 3s;
+	-moz-animation: fadeIn ease 3s;
+	-o-animation: fadeIn ease 3s;
+	-ms-animation: fadeIn ease 3s;
+}
+
+.fade-in-5 {
+	animation: fadeIn ease 5s;
+	-webkit-animation: fadeIn ease 5s;
+	-moz-animation: fadeIn ease 5s;
+	-o-animation: fadeIn ease 5s;
+	-ms-animation: fadeIn ease 5s;
+}
+
+.fade {
+	border-radius: 80px;
+	box-shadow: 0 0 15px 10px #141414;
+}
+
+@keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+.fade-out-1 {
+	animation: fadeOut ease 1s;
+	-webkit-animation: fadeOut ease 1s;
+	-moz-animation: fadeOut ease 1s;
+	-o-animation: fadeOut ease 1s;
+	-ms-animation: fadeOut ease 1s;
+}
+
+.fade {
+	border-radius: 80px;
+	box-shadow: 0 0 15px 10px #141414;
+}
+
+@keyframes fadeOut {
+	100% {opacity:1;}
+	0% {opacity:0;}
+}
+
+@-moz-keyframes fadeOut {
+	100% {opacity:1;}
+	0% {opacity:0;}
+}
+
+@-webkit-keyframes fadeOut {
+	100% {opacity:1;}
+	0% {opacity:0;}
+}
+
+@-o-keyframes fadeOut {
+	100% {opacity:1;}
+	0% {opacity:0;}
+}
+
+@-ms-keyframes fadeOut {
+	100% {opacity:1;}
+	0% {opacity:0;}
+}

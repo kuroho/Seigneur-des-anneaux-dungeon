@@ -1,0 +1,83 @@
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #363232;
+  border: 2px solid #363232;
+  background: #eae0c2;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #ffffff;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background-color: #252629;
+  border-radius: 10px;
+  width: 80%;
+  position: relative;
+  height: 60%;
+  z-index: 2;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #eae0c2;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 70px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #eae0c2;
+}
+
+.popup .close:hover {
+  color: #ab967d;
+}
+
+.popup .content {
+  max-height: 90%;
+  overflow: auto;
+  box-sizing: border-box;
+  background: #1f1f1f;
+  background: url("../image/combat-log.jpg");
+  background-size: cover;
+  border-color: #eae0c2;
+  border-radius: 10px;
+  padding-left: 20px;
+  text-align: center;
+
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
